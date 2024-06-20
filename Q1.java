@@ -1,16 +1,12 @@
 import java.util.Scanner;
-class Q1 {
-    private static Scanner sc = new Scanner(System.in);
+public class Q1{
     public static void main(String[] args) {
-        Watch w = input();
-        System.out.println("Watch name: " + w.getName());
-        System.out.println("Colour: " + w.getColour());
-        System.out.println("Price: " + w.getPrice() + " baht");
-    }
-    private static Watch input() {
-        String name = sc.nextLine();
-        String colour = sc.nextLine();
-        int price = Integer.parseInt(sc.nextLine());
-        return new Watch(name, colour, price);
-    }
-    }
+    Scanner sc = new Scanner(System.in);
+    double venus = 224.70;
+    double earth = 365.25;
+    int age =sc.nextInt();
+    double daysearth = earth*age;
+    double ys = daysearth/venus;
+    System.out.printf("%.2f",ys);
+}
+}

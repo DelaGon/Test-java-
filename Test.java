@@ -1,7 +1,7 @@
 class Test {
-    public static void main(String[] args){
-        tree t =new tree();
-        t.g(50);
-        System.out.print(t.gatH());
+    public static void main(String[] args) {
+        Gadget thing = new ExtraGadget("Phon",5000,1000);
+        thing.discount(50);
+        System.out.println(thing.getNetPrice());
     }
 }
